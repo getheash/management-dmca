@@ -1,11 +1,15 @@
 import NavBar from "./navbar";
 import styles from "./layout.module.css";
+import Container from "react-bootstrap/Container";
 
 function Layout({ children }) {
   return (
     <>
       <NavBar />
-      <main className={styles.container}>{children}</main>
+      {/* wrapping childern with react-bootstrap Container library */}
+      <Container>
+        <main className={styles.container}>{children}</main>
+      </Container>
     </>
   );
 }

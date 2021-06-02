@@ -10,3 +10,76 @@
     font-size: 30px;
   }
 }
+
+.intro,
+.notice {
+  text-align: center;
+}
+
+.notice {
+  margin-top: 5px;
+}
+
+.features {
+  background-color: rgba(128, 128, 128, 0.2);
+  padding: 15px 6px;
+  border-radius: 5px;
+  margin: 15px 15px 30px 15px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #0070f3;
+}
+
+@media (max-width: 485px) {
+  .features {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+.icon {
+  font-size: 30px;
+  color: dodgerblue;
+  margin-left: 5px;
+}
+
+.feature {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.featureBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.3);
+  width: calc(100% / 3);
+  margin: 10px;
+  border-radius: 5px;
+}
+
+@media (max-width: 770px) {
+  .feature {
+    flex-direction: column;
+  }
+
+  .featureBox {
+    max-width: 250px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+.step {
+  padding-top: 4px;
+  font-size: 23px;
+}
+
+.description p {
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+}
