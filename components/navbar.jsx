@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./navbar.module.css";
 import { Navbar, Nav } from "react-bootstrap";
+import Link from "next/link";
 
 const NavBar = () => {
   return (
@@ -21,12 +22,13 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="#features" className="text-white">
-              Features
-            </Nav.Link>
-            <Nav.Link href="#subscription" className="text-white">
-              Subscription
-            </Nav.Link>
+            {/*wrap Nav.Link within Link and use passHref attribute to avoid entire page refresh */}
+            <Link href="/" passHref>
+              <Nav.Link className="text-white">Features</Nav.Link>
+            </Link>
+            <Link href="/subscription" passHref>
+              <Nav.Link className="text-white">Subscription</Nav.Link>
+            </Link>
             <Nav.Link href="#submit-links" className="text-white">
               Submit Links
             </Nav.Link>

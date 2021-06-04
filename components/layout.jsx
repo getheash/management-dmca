@@ -7,8 +7,8 @@ function Layout({ children }) {
     <>
       <NavBar />
       {/* wrapping childern with react-bootstrap Container library */}
-      <Container>
-        <main className={styles.container}>{children}</main>
+      <Container className={styles.container}>
+        <main>{children}</main>
       </Container>
     </>
   );

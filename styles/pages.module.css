@@ -1,0 +1,29 @@
+.subscription {
+  background-color: rgba(128, 128, 128, 0.2);
+  padding: 15px 6px;
+  border-radius: 5px;
+  margin: 100px 15px 30px 15px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #0070f3;
+}
+
+.subscription p {
+  margin-left: 5px;
+}
+
+.subscriptionForm {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+@media (max-width: 485px) {
+  .subscription {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+.formMargin {
+  margin-bottom: 15px;
+}
