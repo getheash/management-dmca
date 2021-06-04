@@ -22,16 +22,16 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            {/*wrap Nav.Link within Link and use passHref attribute to avoid entire page refresh */}
+            {/*wrap Nav.Link within Link and use passHref attribute to avoid entire page refresh and proper routing*/}
             <Link href="/" passHref>
               <Nav.Link className="text-white">Features</Nav.Link>
             </Link>
             <Link href="/subscription" passHref>
               <Nav.Link className="text-white">Subscription</Nav.Link>
             </Link>
-            <Nav.Link href="#submit-links" className="text-white">
-              Submit Links
-            </Nav.Link>
+            <Link href="/submitlinks" passHref>
+              <Nav.Link className="text-white">Submit Links</Nav.Link>
+            </Link>
             <Nav.Link href="#testimonials" className="text-white">
               Testimonials
             </Nav.Link>
