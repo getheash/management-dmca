@@ -1,5 +1,6 @@
 .subscription,
-.submitLinks {
+.submitLinks,
+.contact {
   background-color: rgba(128, 128, 128, 0.2);
   padding: 15px 6px;
   border-radius: 5px;
@@ -10,7 +11,9 @@
 }
 
 .subscription p,
-.submitLinks p {
+.submitLinks p,
+.contact h3,
+.contact p {
   margin-left: 5px;
 }
 
@@ -21,7 +24,9 @@
 }
 
 @media (max-width: 485px) {
-  .subscription {
+  .subscription,
+  .submitLinks,
+  .contact {
     margin-left: 5px;
     margin-right: 5px;
   }
@@ -29,4 +34,8 @@
 
 .formMargin {
   margin-bottom: 15px;
+}
+
+.contact h3 {
+  font-weight: 400;
 }
