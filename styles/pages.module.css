@@ -1,6 +1,7 @@
 .subscription,
 .submitLinks,
-.contact {
+.contact,
+.testimonials {
   background-color: rgba(128, 128, 128, 0.2);
   padding: 15px 6px;
   border-radius: 5px;
@@ -26,9 +27,11 @@
 @media (max-width: 485px) {
   .subscription,
   .submitLinks,
-  .contact {
+  .contact,
+  .testimonials {
     margin-left: 5px;
     margin-right: 5px;
+    padding: 7px 3px;
   }
 }
 
@@ -38,4 +41,59 @@
 
 .contact h3 {
   font-weight: 400;
+}
+
+.testimonialBox {
+  background-color: rgba(128, 128, 128, 0.3);
+  margin: 10px;
+  padding: 7px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.imageContainer {
+  width: 30%;
+  height: 320px;
+  margin: 5px;
+  padding: 5px;
+}
+.imageContainer p {
+  text-align: center;
+}
+
+.clientDescription {
+  width: 70%;
+}
+
+.clientDescription p {
+  margin: 5px;
+  padding: 5px;
+  text-align: left;
+}
+
+@media (max-width: 670px) {
+  .testimonialBox {
+    margin: 5px;
+    padding: 5px;
+    flex-direction: column;
+  }
+
+  .imageContainer {
+    max-width: 250px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .clientDescription {
+    max-width: 600px;
+    width: 100%;
+  }
+
+  .clientDescription p {
+    text-align: justify;
+    margin: 2px;
+    padding: 2px;
+  }
 }
