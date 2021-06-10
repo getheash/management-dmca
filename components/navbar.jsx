@@ -32,9 +32,9 @@ const NavBar = () => {
             <Link href="/submitlinks" passHref>
               <Nav.Link className="text-white">Submit Links</Nav.Link>
             </Link>
-            <Nav.Link href="#testimonials" className="text-white">
-              Testimonials
-            </Nav.Link>
+            <Link href="/testimonials" passHref>
+              <Nav.Link className="text-white">Testimonials</Nav.Link>
+            </Link>
             <Link href="/contact" passHref>
               <Nav.Link className="text-white">Contact</Nav.Link>
             </Link>
