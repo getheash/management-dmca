@@ -23,6 +23,7 @@ function Testimonials() {
                 width={250}
                 height={290}
                 layout={isLayout}
+                priority="true"
               />
               <p>
                 <b>Rhonda</b>{" "}
@@ -86,6 +87,7 @@ function Testimonials() {
                 width={250}
                 height={290}
                 layout={isLayout}
+                priority="true"
               />
               <p>
                 <b>Persephanii</b>{" "}
