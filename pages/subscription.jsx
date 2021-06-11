@@ -13,7 +13,8 @@ function Subscription() {
           <p>If you are a new subscriber, please fill the required details:</p>
           <Form className={styles.subscriptionForm}>
             <Form.Row>
-              <Col md="6" className={styles.formMargin}>
+              {/*wrap Col within Form.Group using 'as' attribute so that it adds margin-bottom automatically */}
+              <Form.Group as={Col} md="6">
                 <Form.Label htmlFor="name">Name</Form.Label>
                 <Form.Control
                   type="text"
@@ -21,8 +22,8 @@ function Subscription() {
                   placeholder="Enter your first and last name"
                   required
                 />
-              </Col>
-              <Col md="6" className={styles.formMargin}>
+              </Form.Group>
+              <Form.Group as={Col} md="6">
                 <Form.Label htmlFor="email">Email</Form.Label>
                 <Form.Control
                   type="email"
@@ -30,11 +31,11 @@ function Subscription() {
                   placeholder="Enter your email id"
                   required
                 />
-              </Col>
+              </Form.Group>
             </Form.Row>
 
             <Form.Row>
-              <Col md="6" className={styles.formMargin}>
+              <Form.Group as={Col} md="6">
                 <Form.Label htmlFor="url">Copyright Website</Form.Label>
                 <Form.Control
                   type="url"
@@ -46,9 +47,9 @@ function Subscription() {
                   please check if your URL has 'https://' at the beginning for
                   valid entry
                 </Form.Text>
-              </Col>
+              </Form.Group>
 
-              <Col md="6" className={styles.formMargin}>
+              <Form.Group as={Col} md="6">
                 <Form.Label htmlFor="urlOptional">
                   <i>Optional</i>
                 </Form.Label>
@@ -57,7 +58,7 @@ function Subscription() {
                   id="urlOptional"
                   placeholder="Enter your 2nd website url"
                 />
-              </Col>
+              </Form.Group>
             </Form.Row>
 
             <Form.Group>
