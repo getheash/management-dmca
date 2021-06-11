@@ -22,6 +22,7 @@ function Testimonials() {
                 alt="Picture of Rhonda"
                 width={250}
                 height={290}
+                quality="100%"
                 layout={isLayout}
                 priority="true"
               />
@@ -86,6 +87,7 @@ function Testimonials() {
                 alt="Picture of Persephanii"
                 width={250}
                 height={290}
+                quality="100%"
                 layout={isLayout}
                 priority="true"
               />
