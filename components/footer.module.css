@@ -1,0 +1,9 @@
+.footerCopyright {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  padding: 20px 5px 10px 5px;
+  margin-top: 10px;
+  background-color: #1269ec;
+}
