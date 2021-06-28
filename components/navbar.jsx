@@ -24,19 +24,19 @@ const NavBar = () => {
           <Nav className="mr-auto">
             {/*wrap Nav.Link within Link and use passHref attribute to avoid entire page refresh and proper routing*/}
             <Link href="/" passHref>
-              <Nav.Link className="text-white">Features</Nav.Link>
+              <Nav.Link className={styles.navLink}>Features</Nav.Link>
             </Link>
             <Link href="/subscription" passHref>
-              <Nav.Link className="text-white">Subscription</Nav.Link>
+              <Nav.Link className={styles.navLink}>Subscription</Nav.Link>
             </Link>
             <Link href="/submitlinks" passHref>
-              <Nav.Link className="text-white">Submit Links</Nav.Link>
+              <Nav.Link className={styles.navLink}>Submit Links</Nav.Link>
             </Link>
             <Link href="/testimonials" passHref>
-              <Nav.Link className="text-white">Testimonials</Nav.Link>
+              <Nav.Link className={styles.navLink}>Testimonials</Nav.Link>
             </Link>
             <Link href="/contact" passHref>
-              <Nav.Link className="text-white">Contact</Nav.Link>
+              <Nav.Link className={styles.navLink}>Contact</Nav.Link>
             </Link>
           </Nav>
         </Navbar.Collapse>

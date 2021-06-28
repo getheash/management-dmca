@@ -1,4 +1,13 @@
 .navbarBrand {
   font-weight: 600;
-  color: white;
+}
+
+/*In order to apply text color (white), add !important to color */
+.navLink {
+  font-weight: 400;
+  color: white !important;
+}
+
+.navLink:hover {
+  font-weight: 600;
 }

@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
 function Home() {
@@ -63,9 +63,9 @@ function Home() {
                   content,so you can achieve a peace of mind and spend your
                   valuable time as you please. You can also submit links for
                   takedown using the{" "}
-                  <a className="text-dark" href="#submitLinks">
-                    "Submit Links"
-                  </a>{" "}
+                  <Link href="/submitlinks" passHref>
+                    <a className="text-dark">"Submit Links"</a>
+                  </Link>{" "}
                   section
                 </p>
               </div>
