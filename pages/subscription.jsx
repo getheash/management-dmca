@@ -11,7 +11,16 @@ function Subscription() {
       <div>
         <section className={styles.subscription}>
           <p>If you are a new subscriber, please fill the required details:</p>
-          <Form className={styles.subscriptionForm}>
+          {/*add attributes name, method, data-netlify to Form so that Netlify would recognize the form */}
+          <Form
+            name="subscription v1"
+            method="POST"
+            data-netlify="true"
+            onSubmit="submit"
+            className={styles.subscriptionForm}
+          >
+            {/*add input tag with hidden type and value matching with name attribute in Form tag */}
+            <input type="hidden" name="form-name" value="subscription v1" />
             <Form.Row>
               {/*wrap Col within Form.Group using 'as' attribute so that it adds margin-bottom automatically */}
               <Form.Group as={Col} md="6">
@@ -19,6 +28,7 @@ function Subscription() {
                 <Form.Control
                   type="text"
                   id="name"
+                  name="name"
                   placeholder="Enter your first and last name"
                   required
                 />
@@ -28,6 +38,7 @@ function Subscription() {
                 <Form.Control
                   type="email"
                   id="email"
+                  name="email"
                   placeholder="Enter your email id"
                   required
                 />
@@ -40,6 +51,7 @@ function Subscription() {
                 <Form.Control
                   type="url"
                   id="url"
+                  name="url"
                   placeholder="Enter your website url"
                   required
                 />
@@ -56,6 +68,7 @@ function Subscription() {
                 <Form.Control
                   type="url"
                   id="urlOptional"
+                  name="urlOptional"
                   placeholder="Enter your 2nd website url"
                 />
               </Form.Group>
@@ -74,19 +87,19 @@ function Subscription() {
               ></Form.Check>
               <Form.Check
                 type="radio"
-                label="3-months - $900"
+                label="3-months - $900 (14.3% off)"
                 name="subscriptionPlans"
                 id="subscriptionPlan2"
               ></Form.Check>
               <Form.Check
                 type="radio"
-                label="6-months - $1650"
+                label="6-months - $1650 (21.4% off)"
                 name="subscriptionPlans"
                 id="subscriptionPlan3"
               ></Form.Check>
               <Form.Check
                 type="radio"
-                label="12-months - $3100"
+                label="12-months - $3100 (26.2% off)"
                 name="subscriptionPlans"
                 id="subscriptionPlan4"
               ></Form.Check>
@@ -102,6 +115,7 @@ function Subscription() {
               <Form.Control
                 type="text"
                 id="referralCode"
+                name="referralCode"
                 placeholder="Enter referral code"
               />
             </Form.Group>
