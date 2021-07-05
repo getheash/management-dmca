@@ -1,7 +1,5 @@
 import Head from "next/head";
 import styles from "../styles/pages.module.css";
-import img1 from "../public/Rhonda.jpg";
-import img2 from "../public/Persephanii.jpg";
 import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
 
@@ -18,7 +16,7 @@ function Testimonials() {
           <div className={styles.testimonialBox}>
             <div className={styles.imageContainer}>
               <Image
-                src={img1}
+                src="/Rhonda.jpg"
                 alt="Picture of Rhonda"
                 width={250}
                 height={290}
@@ -83,7 +81,7 @@ function Testimonials() {
           <div className={styles.testimonialBox}>
             <div className={styles.imageContainer}>
               <Image
-                src={img2}
+                src="/Persephanii.jpg"
                 alt="Picture of Persephanii"
                 width={250}
                 height={290}
