@@ -83,7 +83,7 @@ function Subscription() {
                 label="1-month - $350"
                 name="subscriptionPlans"
                 id="subscriptionPlan1"
-                checked
+                required
               ></Form.Check>
               <Form.Check
                 type="radio"
