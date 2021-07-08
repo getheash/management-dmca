@@ -5,7 +5,7 @@ import { useMediaQuery } from "react-responsive";
 
 function Testimonials() {
   const viewport = useMediaQuery({ query: "(max-width: 670px)" });
-  const isLayout = viewport ? "fixed" : "intrinsic";
+  const isLayout = viewport ? "responsive" : "intrinsic";
   return (
     <div>
       <Head>
@@ -19,8 +19,8 @@ function Testimonials() {
                 src="/Rhonda.jpg"
                 alt="Picture of Rhonda"
                 width={250}
-                height={290}
-                quality="100%"
+                height={300}
+                quality="100"
                 layout={isLayout}
                 priority="true"
               />
@@ -84,8 +84,8 @@ function Testimonials() {
                 src="/Persephanii.jpg"
                 alt="Picture of Persephanii"
                 width={250}
-                height={290}
-                quality="100%"
+                height={300}
+                quality="100"
                 layout={isLayout}
                 priority="true"
               />

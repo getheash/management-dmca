@@ -25,6 +25,7 @@ function SubmitLinks() {
               <Form.Control
                 type="text"
                 id="identityCode"
+                name="code"
                 placeholder="Enter your identity code"
                 required
               />
@@ -38,6 +39,7 @@ function SubmitLinks() {
               <Form.Control
                 type="text"
                 id="copyrightTitle"
+                name="copyrightTitle"
                 placeholder="Enter the title of your copyright content"
                 required
               />
@@ -48,6 +50,7 @@ function SubmitLinks() {
                 as="textarea"
                 rows={3}
                 id="links"
+                name="links"
                 placeholder="Enter the website links..."
                 required
               />
@@ -58,6 +61,7 @@ function SubmitLinks() {
                 as="textarea"
                 rows={3}
                 id="comment"
+                name="comment"
                 placeholder="Enter your comments..."
                 required
               />
