@@ -74,6 +74,12 @@
 }
 
 @media (max-width: 670px) {
+  .subscription,
+  .submitLinks,
+  .contact,
+  .testimonials {
+    margin-bottom: 30px;
+  }
   .testimonialBox {
     margin: 5px;
     padding: 5px;
