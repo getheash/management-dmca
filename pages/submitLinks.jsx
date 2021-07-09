@@ -11,12 +11,21 @@ function SubmitLinks() {
       <div>
         <section className={styles.submitLinks}>
           <p>Please use the form to submit links that need to be taken down:</p>
-          <Form className={styles.submitLinksForm}>
+          <Form
+            name="submitLinks v1"
+            method="POST"
+            data-netlify="true"
+            onSubmit="submit"
+            className={styles.submitLinksForm}
+          >
+            {/*add input tag with hidden type and value matching with name attribute in Form tag */}
+            <input type="hidden" name="form-name" value="submitLinks v1" />
             <Form.Group>
               <Form.Label htmlFor="identityCode">Identity Code</Form.Label>
               <Form.Control
                 type="text"
                 id="identityCode"
+                name="code"
                 placeholder="Enter your identity code"
                 required
               />
@@ -30,6 +39,7 @@ function SubmitLinks() {
               <Form.Control
                 type="text"
                 id="copyrightTitle"
+                name="copyrightTitle"
                 placeholder="Enter the title of your copyright content"
                 required
               />
@@ -40,6 +50,7 @@ function SubmitLinks() {
                 as="textarea"
                 rows={3}
                 id="links"
+                name="links"
                 placeholder="Enter the website links..."
                 required
               />
@@ -50,6 +61,7 @@ function SubmitLinks() {
                 as="textarea"
                 rows={3}
                 id="comment"
+                name="comment"
                 placeholder="Enter your comments..."
                 required
               />

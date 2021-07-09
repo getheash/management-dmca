@@ -1,5 +1,6 @@
 .title {
   margin-top: 60px;
+  margin-bottom: 40px;
   padding: 10px;
   font-weight: 400;
   text-align: center;
@@ -8,6 +9,7 @@
 @media (max-width: 770px) {
   .title {
     font-size: 30px;
+    margin-bottom: 20px;
   }
 }
 
@@ -24,7 +26,7 @@
   background-color: rgba(128, 128, 128, 0.2);
   padding: 15px 6px;
   border-radius: 5px;
-  margin: 15px 15px 30px 15px;
+  margin: 15px 15px 60px 15px;
   border-style: solid;
   border-width: thin;
   border-color: #0070f3;
@@ -61,6 +63,10 @@
 }
 
 @media (max-width: 770px) {
+  .features {
+    margin-bottom: 30px;
+  }
+
   .feature {
     flex-direction: column;
   }
