@@ -63,7 +63,6 @@ function SubmitLinks() {
                 id="comment"
                 name="comment"
                 placeholder="Enter your comments..."
-                required
               />
             </Form.Group>
             <Button variant="primary" type="submit">

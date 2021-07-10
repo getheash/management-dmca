@@ -81,26 +81,26 @@ function Subscription() {
               <Form.Check
                 type="radio"
                 label="1-month - $350"
-                name="subscriptionPlans"
+                name="subscriptionPlan"
                 id="subscriptionPlan1"
                 required
               ></Form.Check>
               <Form.Check
                 type="radio"
                 label="3-months - $900 (14.3% off)"
-                name="subscriptionPlans"
+                name="subscriptionPlan"
                 id="subscriptionPlan2"
               ></Form.Check>
               <Form.Check
                 type="radio"
                 label="6-months - $1650 (21.4% off)"
-                name="subscriptionPlans"
+                name="subscriptionPlan"
                 id="subscriptionPlan3"
               ></Form.Check>
               <Form.Check
                 type="radio"
                 label="12-months - $3100 (26.2% off)"
-                name="subscriptionPlans"
+                name="subscriptionPlan"
                 id="subscriptionPlan4"
               ></Form.Check>
               <Form.Text id="planHelp">
