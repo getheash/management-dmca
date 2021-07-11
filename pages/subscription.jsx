@@ -13,14 +13,14 @@ function Subscription() {
           <p>If you are a new subscriber, please fill the required details:</p>
           {/*add attributes name, method, data-netlify to Form so that Netlify would recognize the form */}
           <Form
-            name="subscription v1"
+            name="subscription v2"
             method="POST"
             data-netlify="true"
             onSubmit="submit"
             className={styles.subscriptionForm}
           >
             {/*add input tag with hidden type and value matching with name attribute in Form tag */}
-            <input type="hidden" name="form-name" value="subscription v1" />
+            <input type="hidden" name="form-name" value="subscription v2" />
             <Form.Row>
               {/*wrap Col within Form.Group using 'as' attribute so that it adds margin-bottom automatically */}
               <Form.Group as={Col} md="6">
@@ -78,31 +78,18 @@ function Subscription() {
               <Form.Label htmlFor="subscriptionPlan">
                 Subscription Plan
               </Form.Label>
-              <Form.Check
-                type="radio"
-                label="1-month - $350"
+              <Form.Control
+                as="select"
+                id="subscriptionPlan"
                 name="subscriptionPlan"
-                id="subscriptionPlan1"
                 required
-              ></Form.Check>
-              <Form.Check
-                type="radio"
-                label="3-months - $900 (14.3% off)"
-                name="subscriptionPlan"
-                id="subscriptionPlan2"
-              ></Form.Check>
-              <Form.Check
-                type="radio"
-                label="6-months - $1650 (21.4% off)"
-                name="subscriptionPlan"
-                id="subscriptionPlan3"
-              ></Form.Check>
-              <Form.Check
-                type="radio"
-                label="12-months - $3100 (26.2% off)"
-                name="subscriptionPlan"
-                id="subscriptionPlan4"
-              ></Form.Check>
+                custom
+              >
+                <option value="0">1-month - $350</option>
+                <option value="1">3-months - $900 (14.3% off)</option>
+                <option value="2">6-months - $1650 (21.4% off</option>
+                <option value="0">12-months - $3100 (26.2% 0ff)</option>
+              </Form.Control>
               <Form.Text id="planHelp">
                 Every plan includes unlimited takedowns
               </Form.Text>
