@@ -16,7 +16,7 @@ function Testimonials() {
           <div className={styles.testimonialBox}>
             <div className={styles.imageContainer}>
               <Image
-                src="/Rhonda.jpg"
+                src="/Client1.jpg"
                 alt="Picture of Rhonda"
                 width={250}
                 height={300}
@@ -81,7 +81,7 @@ function Testimonials() {
           <div className={styles.testimonialBox}>
             <div className={styles.imageContainer}>
               <Image
-                src="/Persephanii.jpg"
+                src="/Client2.jpg"
                 alt="Picture of Persephanii"
                 width={250}
                 height={300}
