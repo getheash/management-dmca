@@ -28,6 +28,7 @@ function FooterCopyright() {
               left: 0;
               bottom: 0;
               width: 100%;
+              height: 65px;
               text-align: center;
               color: white;
               padding: 20px 5px 10px 5px;
