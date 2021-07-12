@@ -91,7 +91,8 @@ function Subscription() {
                 <option value="0">12-months - $3100 (26.2% 0ff)</option>
               </Form.Control>
               <Form.Text id="planHelp">
-                Every plan includes unlimited takedowns
+                Choose a subscription plan. Every plan includes unlimited
+                takedowns.
               </Form.Text>
             </Form.Group>
 
