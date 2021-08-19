@@ -1,5 +1,5 @@
-.navbarBrand {
-  font-weight: 600;
+.logo {
+  margin: 5px 15px -5px 5px;
 }
 
 /*In order to apply text color (white), add !important to color */

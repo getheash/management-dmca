@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./navbar.module.css";
 import { Navbar, Nav } from "react-bootstrap";
 import Link from "next/link";
+import Image from "next/image";
 
 const NavBar = () => {
   return (
@@ -15,10 +16,17 @@ const NavBar = () => {
       >
         <Navbar.Brand
           href="https://www.gethmanagement.com/"
-          className={styles.navbarBrand}
+          className={styles.logo}
         >
-          GM
+          <Image
+            src="/logo.svg"
+            alt="Geth Management Logo"
+            width={30}
+            height={30}
+            className="d-inline-block align-top"
+          />
         </Navbar.Brand>
+
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
