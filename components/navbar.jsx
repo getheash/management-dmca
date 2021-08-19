@@ -23,7 +23,7 @@ const NavBar = () => {
             alt="Geth Management Logo"
             width={30}
             height={30}
-            className="d-inline-block align-top"
+            priority="true"
           />
         </Navbar.Brand>
 
