@@ -7,7 +7,7 @@ function FooterCopyright() {
     <footer>
       <div style={{ height: "65px" }}>
         <div className={footerPos}>
-          &copy; Copyright 2020 - 2021{" "}
+          &copy; Copyright 2020 - 2022{" "}
           <a href="https://www.gethmanagement.com/" className="text-white">
             Geth Management
           </a>{" "}
