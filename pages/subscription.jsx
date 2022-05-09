@@ -13,14 +13,14 @@ function Subscription() {
           <p>If you are a new subscriber, please fill the required details:</p>
           {/*add attributes name, method, data-netlify to Form so that Netlify would recognize the form */}
           <Form
-            name="subscription v2"
+            name="subscription v3"
             method="POST"
             data-netlify="true"
             onSubmit="submit"
             className={styles.subscriptionForm}
           >
             {/*add input tag with hidden type and value matching with name attribute in Form tag */}
-            <input type="hidden" name="form-name" value="subscription v2" />
+            <input type="hidden" name="form-name" value="subscription v3" />
             <Form.Row>
               {/*wrap Col within Form.Group using 'as' attribute so that it adds margin-bottom automatically */}
               <Form.Group as={Col} md="6">
@@ -85,10 +85,9 @@ function Subscription() {
                 required
                 custom
               >
-                <option value="0">1-month - $350</option>
-                <option value="1">3-months - $900 (14.3% off)</option>
-                <option value="2">6-months - $1650 (21.4% off</option>
-                <option value="3">12-months - $3100 (26.2% 0ff)</option>
+                <option value="0">3-month - $1000</option>
+                <option value="1">6-month - $1700 (15% off)</option>
+                <option value="2">12-month - $3000 (25% 0ff)</option>
               </Form.Control>
               <Form.Text id="planHelp">
                 Choose a subscription plan. Every plan includes unlimited
